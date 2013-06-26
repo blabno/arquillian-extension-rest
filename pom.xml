@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jboss.arquillian</groupId>
     <artifactId>arquillian-extension-rest</artifactId>
-    <version>1.0.0.Alpha1-SNAPSHOT</version>
+    <version>1.0.0.Alpha1.ITC1</version>
     <name>Arquillian Extension: REST</name>
     <description>Integrates a REST client API (using RestEasy Client Proxies) to facilitate testing REST endpoints</description>
 
