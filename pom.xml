@@ -10,9 +10,9 @@
     <description>Integrates a REST client API (using RestEasy Client Proxies) to facilitate testing REST endpoints</description>
 
     <properties>
-        <version.resteasy>2.2.3.GA</version.resteasy>
+        <version.resteasy>3.0.1.Final</version.resteasy>
         <version.jboss_spec>1.0.0.Final</version.jboss_spec>
-        <version.arquillian_core>1.0.0.Final</version.arquillian_core>
+        <version.arquillian_core>1.0.3.Final</version.arquillian_core>
         <version.jbossas_7>7.1.1.Final</version.jbossas_7>
     </properties>
 
@@ -35,6 +35,16 @@
                 <artifactId>resteasy-jaxb-provider</artifactId>
                 <version>${version.resteasy}</version>
             </dependency>
+            <dependency>
+                <groupId>org.jboss.resteasy</groupId>
+                <artifactId>resteasy-jackson-provider</artifactId>
+                <version>${version.resteasy}</version>
+            </dependency>
+            <dependency>
+               <groupId>org.jboss.resteasy</groupId>
+               <artifactId>resteasy-client</artifactId>
+               <version>${version.resteasy}</version>
+           </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -57,8 +67,16 @@
             <artifactId>resteasy-jaxrs</artifactId>
         </dependency>
         <dependency>
+           <groupId>org.jboss.resteasy</groupId>
+           <artifactId>resteasy-client</artifactId>
+       </dependency>
+        <dependency>
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-jaxb-provider</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jackson-provider</artifactId>
         </dependency>
 
         <dependency>
